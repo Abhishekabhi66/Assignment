@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 steps:
 - name: docker  
-  image: plugins/docker:17.05
+  image: plugins/docker
   settings:
     username:
       from_secret: DOCKER_USER
