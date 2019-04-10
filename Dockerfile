@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Ashok Shingade "ashok.devops@devops.com"
+MAINTAINER Abhishek Sanga "asdevops12@gmail.com"
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
