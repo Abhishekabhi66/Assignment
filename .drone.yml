@@ -8,7 +8,7 @@ steps:
       from_secret: DOCKER_USER
     password:
       from_secret: DOCKER_PASS
-    repo: abhisheksanga/caching-service
+    repo: abhisheksanga/cachingservice
     tags:
       - latest
       - '1.0.1'
