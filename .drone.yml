@@ -13,9 +13,4 @@ steps:
       - latest
       - '1.0.1'
       - '1.0'
-- name: slack
-  image: plugins/slack
-  settings:
-    webhook:
-      from_secret: slack_webhook
-    channel: dev
+
