@@ -24,7 +24,7 @@ spec:
       - env:
         - name: REDIS_HOST
           value: redis
-        image: ashokshingade24/caching-service:v1
+        image: abhisheksanga/cachingservice
         name: caching-app
         ports:
         - containerPort: 5000
