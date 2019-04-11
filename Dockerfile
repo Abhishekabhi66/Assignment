@@ -12,7 +12,7 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-COPY ./server.py /app
+COPY ././app
 
 ENV FLASK_APP=server.py
 
