@@ -30,6 +30,12 @@ Post-Request:
      --data '{"value":"Abhi"}' \
      http://localhost:5000/set/newKey
      
-  Get-Request:
+  Get-Request: \
+  1. Running locally \
  curl http://localhost:5000/getKeys/newKey,test,test1,c \
 {"c":null,"newKey":"Abhi","test":"Hello GumGum!","test1":"Hello World!"}
+  
+  2. Running on kubernetes \
+  curl http://192.168.99.100:32499/getKeys/test,a,b,c \
+  {"a":"Hello GumGum!","b":"Hello World!","c":null,"test":"Hello World!"}
+  
