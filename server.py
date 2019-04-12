@@ -50,6 +50,12 @@ def get(key):
         raise ApiException(
             message="Could not find key '{}' in cache".format(key),
             status_code=404)
+@app.route('/getKeys/<keys>')
+def getKeys(keys):
+	keys = keys.split(",")
+	values = redis.mget(keys)
+
+	return jsonify(dict(map(lambda key, value: (key, value), keys, values)))
 @app.route('/set/<key>', methods=['POST'])
 def set(key):
     try:
