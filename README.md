@@ -10,7 +10,7 @@ Clone the repo  `https://github.com/Abhishekabhi66/Assignment.git`
   
 3. Commit changes to trigger a drone ci pipeline to build the latest docker image.
  
-`Note:` When I'm trying to deploy our application into Heroku our service got deployed succesfully but it is not getting connected with redis database. As I don't have much experience with Heroku I was unable to acheive it. Our application is running successfully on localhost and kubernetes (using mini-kube).
+`Note:` When I'm trying to deploy our application into Heroku our service got deployed succesfully but it is not getting connected with redis database. As I don't have much experience with Heroku I was unable to provide connection between Caching-service and redis database. Our application is running successfully on localhost and kubernetes (using mini-kube).
 
 
 #Multi-key support
