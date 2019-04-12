@@ -3,10 +3,9 @@ from flask import Flask, jsonify, request
 from redis import Redis
 from redis import ConnectionError
 from settings import REDIS_HOST, REDIS_PORT
-#REDIS_URL="127.0.0.1"
 app = Flask( __name__ )
 redis = Redis(host=REDIS_HOST, port=REDIS_PORT)
-#app.logger.debug(REDIS_URL)
+
 ##################
 ### Error handling
 ##################
