@@ -38,4 +38,13 @@ Post-Request:
   2. Running on kubernetes \
   curl http://192.168.99.100:32499/getKeys/test,a,b,c \
   {"a":"Hello GumGum!","b":"Hello World!","c":null,"test":"Hello World!"}
-  
+
+
+The tasks performed successfully as per given document
+
+0) Setting up a new public GitHub repository
+1) Dockerized the Caching service app
+3) Created a Drone deployment pipeline
+4) Created a Multi-key support
+5) Successfully Created a kubernetes service for the Caching service.
+6) setting up pipeline notifications
