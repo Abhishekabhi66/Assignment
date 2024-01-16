@@ -103,3 +103,20 @@ output "Apptier_subnet_2_AZ" {
 output "Apptier_subnet_3_AZ" {
   value = data.aws_subnet.Apptier_subnet_3.availability_zone
 }
+
+output "subnets" {
+  value = [data.aws_subnet.Apptier_subnet_1.id,data.aws_subnet.Apptier_subnet_2.id,data.aws_subnet.Apptier_subnet_3.id]
+}
+
+output "AZs" {
+  value = [data.aws_subnet.Apptier_subnet_1.availability_zone,data.aws_subnet.Apptier_subnet_2.availability_zone,data.aws_subnet.Apptier_subnet_3.availability_zone]
+}
+
+locals {
+  subnet_ids = [data.aws_subnet.Apptier_subnet_1.id,data.aws_subnet.Apptier_subnet_2.id,data.aws_subnet.Apptier_subnet_3.id]
+  availability_zones = [data.aws_subnet.Apptier_subnet_1.availability_zone,data.aws_subnet.Apptier_subnet_2.availability_zone,data.aws_subnet.Apptier_subnet_3.availability_zone]
+}
+
+output "test" {
+  value = zipmap(local.availability_zones,local.subnet_ids)
+}
