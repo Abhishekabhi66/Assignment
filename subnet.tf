@@ -1,9 +1,3 @@
-provider "aws" {
- region     = "us-east-1"
- access_key = "AKIAR36SYARRK3A372XO"
- secret_key = "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"
-}
-
 variable "ApplicationCI" {
  type= string
  default= "cwa"
