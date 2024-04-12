@@ -51,5 +51,9 @@ The tasks performed successfully as per given document
 
 Commit from remote DEV branch - 1
 
+<<<<<<< HEAD
 
 Commit from remote DEV branch - 2
+=======
+Commit from local BRANCH-A branch - 1
+>>>>>>> 58e70c2 (update)
