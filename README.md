@@ -48,3 +48,5 @@ The tasks performed successfully as per given document
 4) Created a Multi-key support
 5) Successfully Created a kubernetes service for the Caching service.
 6) setting up pipeline notifications
+
+Commit from remote DEV branch - 1
