@@ -50,3 +50,6 @@ The tasks performed successfully as per given document
 6) setting up pipeline notifications
 
 Commit from remote DEV branch - 1
+
+
+Commit from remote DEV branch - 2
